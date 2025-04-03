@@ -1,0 +1,102 @@
+[Source - W3Schools]
+
+String Methods:
+
+SELECT ASCII(CustomerName) AS NumCodeOfFirstChar
+FROM Customers;
+
+SELECT CHAR_LENGTH("SQL Tutorial") AS LengthOfString;
+
+
+SELECT CHARACTER_LENGTH("SQL Tutorial") AS LengthOfString;
+
+SELECT CONCAT("SQL ", "Tutorial ", "is ", "fun!") AS ConcatenatedString;
+
+SELECT CONCAT_WS("-", "SQL", "Tutorial", "is", "fun!") AS ConcatenatedString;
+
+SELECT INSERT("W3Schools.com", 1, 9, "Example");
+SELECT INSTR("W3Schools.com", "3") AS MatchPosition;
+
+SELECT LCASE("SQL Tutorial is FUN!");
+
+SELECT LENGTH("SQL Tutorial") AS LengthOfString;
+
+SELECT LOCATE("3", "W3Schools.com") AS MatchPosition;
+
+SELECT LOWER("SQL Tutorial is FUN!");
+
+SELECT LTRIM("     SQL Tutorial") AS LeftTrimmedString;
+
+SELECT MID("SQL Tutorial", 5, 3) AS ExtractString;
+
+SELECT POSITION("3" IN "W3Schools.com") AS MatchPosition;
+
+SELECT REPEAT("SQL Tutorial", 3);
+
+SELECT REPLACE("SQL Tutorial", "SQL", "HTML");
+
+SELECT REVERSE("SQL Tutorial");
+
+SELECT STRCMP("SQL Tutorial", "SQL Tutorial");
+
+SELECT SUBSTR("SQL Tutorial", 5, 3) AS ExtractString;
+
+SELECT SUBSTRING("SQL Tutorial", 5, 3) AS ExtractString;
+
+SELECT SUBSTRING_INDEX("www.w3schools.com", ".", 1);
+
+SELECT UPPER("SQL Tutorial is FUN!");
+
+
+Math Methods :
+
+SELECT PI();
+SELECT POW(4, 2);
+SELECT RAND();
+SELECT ROUND(135.375, 2);
+SELECT SQRT(64);
+SELECT TRUNCATE(135.375, 2);
+
+
+Date :
+SELECT ADDDATE("2017-06-15", INTERVAL 10 DAY);
+
+Add 2 seconds to a time and return the datetime:
+SELECT ADDTIME("2017-06-15 09:34:21", "2");
+SELECT CURRENT_DATE();
+SELECT CURRENT_TIME();
+SELECT DATE("2017-06-15");
+SELECT DATE_ADD("2017-06-15", INTERVAL 10 DAY);
+SELECT DATE_FORMAT("2017-06-15", "%Y");  
+
+SELECT DAYNAME("2017-06-15");
+SELECT DAYOFMONTH("2017-06-15");
+SELECT DAYOFWEEK("2017-06-15");
+SELECT DAYOFYEAR("2017-06-15");
+
+SELECT SYSDATE();
+SELECT WEEK("2017-06-15");
+SELECT WEEKDAY("2017-06-15");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

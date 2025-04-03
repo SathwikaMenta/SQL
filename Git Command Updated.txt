@@ -1,0 +1,155 @@
+https://github.com/c11472/ATE_Phase2_Selenium-Java-Scenarios.git
+https://github.com/c11472/ATE_Phase2_Selenium-Java-Scenarios.git
+https://github.com/c11472/ATE_Phase2_Selenium-Java-Scenarios.git
+https://github.com/c11472/gitdailylife.git
+https://github.com/c11472/Java_ApachePOI_ReadDataFromExcel.git
+https://github.com/c11472/SeleniumWebDriver_Sample_BDD_Framework.git
+https://github.com/c11472/JmeterContent_2024.git
+
+Scenario:1:
+To send the files from local repository to remote repository
+
+git init
+git config --global user.email "gayatrimis1@gmail.com"
+clear
+git add sampledata1.txt
+git commit -m "The sampledata1 file added"
+git remote add origine https://github.com/c11472/gitdailylife.git
+git push -u https://github.com/c11472/gitdailylife.git
+
+git log
+
+Scenario - 2:
+To delete the existing file / branch 
+//delete file
+git rm file1.txt
+git commit -m "commit message"
+git push 
+
+
+Scenario - 3
+Getting data from remote repository to local repository .
+----------------------
+git pull command
+____________________
+git pull --rebase <url>
+$ git pull --rebase https://github.com/c11472/gitdailylife.git
+
+
+_______
+Hp@DESKTOP-M1I9C7U MINGW64 /d/gittestdata (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-M1I9C7U MINGW64 /d/gittestdata (master)
+$ git commit -m "data pulled"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-M1I9C7U MINGW64 /d/gittestdata (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-M1I9C7U MINGW64 /d/gittestdata (master)
+$ git log
+commit ddc92e1339f69d3acdad28acdd48b689b8ffb58a (HEAD -> master, origine/master)
+Author: Gayatri Mishra <33619789+c11472@users.noreply.github.com>
+Date:   Wed Mar 15 02:19:35 2023 +0530
+
+    Update test100.txt
+
+commit 3b8bab9154baec1ccdaf48ab2c921e68d631a016
+Author: gayatrimis1 <gayatrimis1@gmail.com>
+Date:   Wed Mar 15 01:33:15 2023 +0530
+
+    test add
+
+commit 2bc0267512382f4d6457fae88d241ae0ef894614
+Author: gayatrimis1 <gayatrimis1@gmail.com>
+Date:   Wed Mar 15 01:08:41 2023 +0530
+
+
+Scenario - 4:
+Working on git branch
+
+//Branches
+git branch
+git branch branchname
+git checkout branchname
+
+git add file1.txt
+git commit -m "first commit"
+git push -u <url> branchname
+
+git checkout master
+//git merge
+git merge branchname
+git push -u <url> master
+
+//delete branch
+git branch -d  branchname
+git push origine --delete branchname
+
+____________
+
+Scenario - 5
+______________
+
+Create the file and append the same through commands.
+
+git touch file1.txt
+git cat >>file1 
+This is sample data
+ctrl + D
+add
+commit
+push
+_____________
+
+git status
+git log
+git reflog
+_____________
+
+Scenario - 7:
+
+Git clone
+
+//clone
+git clone "https://github.com/c11472/gitdailylife.git"
+Note : please check the local repository
+
+
+Scenario - 8:
+
+How to add the file inside the folder
+
+git add foldername/filename
+
+
+________________________________________________________
+new repos
+https://github.com/c11472/Mishra1.git
+
+
+
+
+
+
+
+
+
